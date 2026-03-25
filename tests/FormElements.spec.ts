@@ -6,5 +6,5 @@ test('Navigation to the site', async({page})=>{
     const basicForm = new BasicForm(page);
     await basicForm.FormData('Priyanka','Priya','test@gmail.com','9014803192','testComments');
     await basicForm.formOutputMsgValidation();
-
+    await basicForm.FormData('Priyanka','Priya','test@gmail.com','9014803192','');
 });
